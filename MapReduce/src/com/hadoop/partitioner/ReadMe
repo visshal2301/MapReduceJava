@@ -1,0 +1,15 @@
+Partitioning of the keys of the intermediate map output is controlled by the Partitioner. 
+By hash function, key (or a subset of the key) is used to derive the partition. 
+According to the key-value each mapper output is partitioned and records having the same key 
+value go into the same partition (within each mapper), and then each partition is sent to a reducer.
+ Partition class determines which partition a given (key, value) pair will go. Partition phase takes place after 
+ map phase and before reduce phase. Lets move ahead with need of Hadoop Partitioner and if you face any difficulty 
+ anywhere in Hadoop MapReduce tutorial, you can ask us in comments.
+ 
+ Flow :-
+PartitionerDriver.java -->PartitionerMapper.java--->MyPartitioner.java--->PartitionerReducer.java
+
+In MyPartioner.java keys coming from PartitionerMapper having value "Delhi","mumbai" will go to same reducer say reducer0.
+Key with Values with "Chennai" and Kolkata will go to Reducer 1;
+else all data will go to Reducer2.
+  
