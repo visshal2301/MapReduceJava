@@ -9,8 +9,8 @@ Mumbai1992 26
 Mumbai1991 22
 
 Mapper :- 
-Calculating Year --> which has an index from 7 to 10.
-Temperature is --->12 to 14.    
+Calculating Year --> which has an index from 6 to 10.
+Temperature is --->11 to 13.    
 
 In Mapper we are passing key as year and temperature as value .
 
