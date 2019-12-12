@@ -1,0 +1,6 @@
+/*
+1] upload the reference data to HDFS
+2] Using MyDistributedMapper add the reference data to the job
+3] In the setup or map method, use the DC to get the reference data and use it in the business logic.
+
+*/
